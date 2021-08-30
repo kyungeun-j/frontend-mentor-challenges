@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+@media (min-width: 375px) {
+  body {
+    background-color: hsl(225, 100%, 94%);
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+  }
+}
+
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  width: 100%;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -275px;
+  margin-left: -175px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 350px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 20px 15px 1px hsl(225deg 74% 88%);
+}
+
+img {
+  flex-basis: auto;
+}
+
+article {
+  flex-basis: 100%;
+  justify-content: space-around;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ar-item {
+  text-align: center;
+  font-weight: 900;
+  font-size: x-large;
+  color: hsl(223, 47%, 23%);
+}
+
+.ar-item2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: small;
+  color: hsl(224, 23%, 55%);
+}
+
+.ar-item3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: small;
+  color: hsl(223, 47%, 23%);
+}
+
+.ar-item4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: small;
+  color: hsl(245, 75%, 52%);
+}
+
+.ar-item5 {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: small;
+  color: hsl(224, 23%, 55%);
+  margin-top: 10px;
+}
+
+.ar-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 75px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+
+.g-img {
+  width: 55%;
+  height: 100%;
+  background-image: url(./images/icon-music.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ar-button {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  border: none;
+  width: -webkit-fill-available;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: small;
+  margin-top: 10px;
+  box-shadow: 1px 10px 20px 1px hsl(245deg 75% 52% / 30%);
+}
