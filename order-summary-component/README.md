@@ -36,25 +36,21 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 2. Reactive Web Foundation
 
 ```css
-@media (min-width: 375px) {
-  body {
-    background-color: hsl(225, 100%, 94%);
-  }
-}
-
-@media (min-width: 1440px) {
-  body {
-    background-image: url(./images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: hsl(225, 100%, 94%);
-  }
-}
-
 body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(225, 100%, 94%);
   font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
   width: 100%;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: none;
+  }
 }
 ```
 
