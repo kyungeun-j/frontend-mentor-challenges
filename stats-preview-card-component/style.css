@@ -1,24 +1,5 @@
-color {
-  color: hsl(233, 47%, 7%) hsl(244, 38%, 16%) hsl(277, 64%, 61%)
-    hsl(0, 0%, 100%) hsla(0, 0%, 100%, 0.75) hsla(0, 0%, 100%, 0.6);
-}
-
-/* ### Primary
-
-- Very dark blue (main background): hsl(233, 47%, 7%)
-- Dark desaturated blue (card background): hsl(244, 38%, 16%)
-- Soft violet (accent): hsl(277, 64%, 61%)
-
-### Neutral
-
-- White (main heading, stats): hsl(0, 0%, 100%)
-- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
-- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6) */
-
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-/* font-family: 'Inter', sans-serif;
-font-family: 'Lexend Deca', sans-serif; */
 
 body {
   font-size: 15px;
@@ -62,6 +43,7 @@ article {
   article {
     padding: 6% 5%;
     text-align: center;
+    height: 65%;
   }
 }
 
@@ -105,6 +87,7 @@ article {
   .item2 {
     margin-right: auto;
     font-size: inherit;
+    margin-bottom: 10%;
   }
 }
 
@@ -119,7 +102,7 @@ article {
     height: 100%;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: auto;
-    margin-top: 10%;
+    margin-top: 4%;
   }
 }
 
