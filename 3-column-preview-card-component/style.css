@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 95%);
+}
+
+article {
+  width: 910px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 3.2rem;
+  color: hsla(0, 0%, 95%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.55rem;
+}
+
+.card p {
+  color: hsl(0deg 0% 95%);
+  font-size: 2.5rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin: 2.5rem auto;
+}
+
+.card button {
+  display: block;
+  border: 0;
+  border-radius: 3rem;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  padding: 0.85rem 2rem;
+  margin: 5.5rem 0;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+.sedans button:hover {
+  opacity: 100%;
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 2.5px solid hsl(0, 0%, 95%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+.suvs button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 2.5px solid hsl(0, 0%, 95%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+.luxury button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 2.5px solid hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 375px) {
+  article {
+    width: 345px;
+    height: 1000px;
+    flex-direction: column;
+  }
+}
