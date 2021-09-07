@@ -22,42 +22,41 @@ body {
 
 section {
   width: 57.5rem;
-  height: 31.7rem;
+  margin: 0;
   border-radius: 1rem;
   background-color: white;
   background-image: url(./images/illustration-woman-online-desktop.svg),
     url(./images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
-  background-position: left -5.5rem top 4rem, left -37.5rem top -18.5rem;
+  background-position: left -5rem top 3.5rem, left -36rem top -19.5rem;
   box-shadow: 2px 20px 15px 2px hsl(252deg 43% 46%);
 }
 
 section::after {
   position: relative;
   content: url(./images/illustration-box-desktop.svg);
-  top: -19rem;
-  left: -8rem;
+  top: -6.5rem;
+  left: -5.9rem;
   filter: drop-shadow(2px 4px 6px hsl(252deg 43% 35%));
 }
 
 article {
   margin-left: 50%;
-  padding: 3.3rem 0;
-  height: 100%;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 article h1 {
   font-size: 2rem;
   font-weight: 700;
+  position: relative;
+  top: 3.5rem;
 }
 
 .drop-down {
-  height: 80%;
-  width: 80%;
-  margin: 2.5rem 0;
+  width: 81%;
+  margin: 0;
   box-sizing: border-box;
+  position: relative;
+  top: 4.5rem;
 }
 
 .drop-title {
@@ -96,4 +95,24 @@ hr {
   border-top: 1px solid hsl(240, 5%, 91%);
   border-bottom: 0px;
   border-left: 0px;
+}
+
+@media screen and (max-width: 1010px) {
+  section {
+    width: 90%;
+    background-image: none;
+  }
+
+  section::after {
+    position: relative;
+    content: url(./images/illustration-woman-online-mobile.svg),
+      url(./images/bg-pattern-mobile.svg);
+    top: -10.5rem;
+    left: -5.9rem;
+    filter: drop-shadow(2px 4px 6px hsl(252deg 43% 35%));
+  }
+
+  article {
+    margin-left: 0%;
+  }
 }
