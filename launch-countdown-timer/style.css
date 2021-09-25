@@ -1,0 +1,142 @@
+:root {
+  /* fonts */
+  --ff-red-hat: "Red Hat Text", sans-serif;
+
+  /* primary colours */
+  --clr-Grayish-blue: hsl(237, 18%, 59%);
+  --Soft-red: hsl(345, 95%, 68%);
+
+  /* neutral colors */
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --clr-Very-dark-blue: hsl(235, 16%, 14%);
+  --clr-Very-mostly-black-blue: hsl(234, 17%, 12%);
+
+  /* paragraphs */
+  /* background, headings, buttons */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  height: 100vh;
+  /* font: 14px, var(--ff-red-hat); */
+  font-size: 14px;
+  font-family: var(--ff-red-hat);
+  color: var(--clr-White);
+  background: url(./images/pattern-hills.svg), url(./images/bg-stars.svg),
+    linear-gradient(
+      to bottom,
+      var(--clr-Very-mostly-black-blue),
+      var(--clr-Very-dark-blue)
+    );
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+
+  font-weight: bold;
+  font-size: 5rem;
+  color: var(--Soft-red);
+}
+
+.fc {
+  /* background: linear-gradient(to bottom, var(--clr-Dark-desaturated-blue), var(--clr-Grayish-blue)); */
+  background-color: var(--clr-Dark-desaturated-blue);
+  width: 9rem;
+  height: 9rem;
+  perspective: 1000px;
+}
+
+/* .c-bg::after {
+  position: absolute;
+  content: " ";
+  top: 31.3rem;
+  left: 22.4rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: red;
+} */
+
+.fc-i {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+  border-bottom: 1px solid black;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+@keyframes flip {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(-180deg);
+  }
+}
+
+.fi-f,
+.fi-b {
+  background-color: var(--clr-Dark-desaturated-blue);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  overflow: hidden;
+}
+
+.fi-f {
+  display: flex;
+  justify-content: center;
+
+  line-height: 9rem;
+}
+
+.fc-t {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 50%;
+
+  line-height: 9rem;
+  overflow: hidden;
+}
+
+.fc-b {
+  background-color: var(--clr-Dark-desaturated-blue);
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 50%;
+
+  line-height: 0rem;
+  overflow: hidden;
+}
+
+.fi-b {
+  transform: rotateX(-180deg);
+
+  display: flex;
+  justify-content: center;
+
+  line-height: 0rem;
+}
