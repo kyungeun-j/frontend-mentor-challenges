@@ -1,31 +1,20 @@
-# Frontend Mentor - Stats preview card component solution
+# Frontend Mentor
+#### Stats preview card component solution
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+<br>
 
-## Table of contents
-
-- Overview
-  - [Screenshot](#screenshot)
-- My process
-  - [Built with](#built-with)
-
-## Overview
-
-### Screenshot
-
-- Mobile
-
-![](./images/screenshot2.png)
-
-- Desktop
-
+## 🖥 Preview
 ![](./images/screenshot.png)
 
-## My process
+<details markdown="1">
+<summary>Mobile Preview</summary>
 
-### Built with
+<img style="height: 600px" src="./images/screenshot2.png">
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+</details>
+
+<br>
+
+## 📎 Links
+- [Git Repository URL](https://github.com/kyungeun-j/frontend-mentor-challenges/tree/master/stats-preview-card-component)
+- [Live Site URL](https://kyungeun-j.github.io/frontend-mentor-challenges/stats-preview-card-component/)

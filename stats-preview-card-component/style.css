@@ -1,9 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+:root {
+  /* main background */
+  --very-dark-blue: hsl(233, 47%, 7%);
+  
+  /* card background */
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  
+  /* accent */
+  --soft-violet: hsl(277, 64%, 61%);
+  
+  /* main heading, stats */
+  --white: hsl(0, 0%, 100%);
+
+  /* main paragraph */
+  --slightly-transparent-white-M: hsla(0, 0%, 100%, 0.75);
+  
+  /* stat headings */
+  --slightly-transparent-white-H: hsla(0, 0%, 100%, 0.6);
+}
+
 body {
   font-size: 15px;
-  background-color: hsl(233, 47%, 7%);
+  background-color: var(--very-dark-blue);
   height: 100vh;
   margin: 0;
   display: flex;
@@ -11,7 +31,7 @@ body {
   justify-content: center;
 }
 
-section {
+main {
   width: 1100px;
   height: 446px;
   border-radius: 7px;
@@ -21,100 +41,110 @@ section {
 }
 
 article {
+  padding: 4rem 4.5rem 4rem 4.5rem;
   background-color: hsl(244, 38%, 16%);
-  flex-basis: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 26rem;
 }
 
-.img {
-  background-color: hsl(277, 64%, 61%);
-  background-image: url(./images/image-header-desktop.jpg);
-  background-blend-mode: multiply;
-  background-size: cover;
-  flex-basis: 100%;
+.text {
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
-.a-text {
-  flex-basis: 100%;
-  color: hsl(0, 0%, 100%);
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 2.5em;
-  padding: 4rem;
-  font-weight: 700;
+h1 {
+  font-size: 2rem;
+  letter-spacing: 2.5px;
+  color: var(--white);
 }
 
-.a-text > span {
+h1 > span {
   color: hsl(277, 64%, 61%);
 }
 
-.a-text > p {
-  color: hsla(0, 0%, 100%, 0.6);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
+p {
+  color: var(--slightly-transparent-white-H);
   font-weight: 400;
-  line-height: 170%;
-  margin-right: 10%;
-  margin-top: 5%;
+  font-size: medium;
+  line-height: 1.5rem;
 }
 
 .a-grid {
-  flex-basis: 100%;
+  height: 8rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 4rem;
+  align-items: end;
 }
 
 .i-c {
-  color: hsl(0, 0%, 100%);
+  color: var(--white);
   font-family: "Inter", sans-serif;
-  font-size: x-large;
+  font-size: 1.5rem;
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
+  margin-right: 5rem;
 }
 
 .i-c > span {
-  color: hsla(0, 0%, 100%, 0.6);
-  font-family: "Inter", sans-serif;
-  font-size: small;
+  color: var(--slightly-transparent-white-H);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: .7rem;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
-@media (max-width: 375px) {
-  section {
+.img {
+  background-color: var(--soft-violet);
+  background-image: url(./images/image-header-desktop.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    height: auto;
+    display: block;
+  }
+  
+  main {
     flex-direction: column-reverse;
-    width: 320px;
-    height: 750px;
+    width: auto;
+    height: auto;
+    margin: 5rem 1.5rem;
   }
   article {
+    height: 28rem;
     text-align: center;
-  }
-  .img {
-    background-image: url(./images/image-header-mobile.jpg);
-    flex-basis: 45%;
-  }
-  .a-text {
-    flex-basis: auto;
-    color: hsl(0, 0%, 100%);
-    font-family: "Inter", sans-serif;
-    font-size: 1.7em;
     padding: 2rem;
   }
 
-  .a-text > p {
-    color: hsla(0, 0%, 100%, 0.6);
-    font-family: "Inter", sans-serif;
-    font-size: 0.9rem;
-    margin-right: auto;
+  h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0;
   }
+
+  p {
+    font-size: inherit;
+  }
+
   .a-grid {
-    flex-basis: 100%;
-    grid-template-rows: repeat(3, 1fr);
+    height: 14.5rem;
+    display: grid;
     grid-template-columns: auto;
   }
+
   .i-c {
-    font-size: 1.3rem;
+    margin-right: 0;
+  }
+
+  .i-c > span {
+    display: block;
+  }
+
+  .img {
+    background-image: url(./images/image-header-mobile.jpg);
+    height: 15rem;
   }
 }
