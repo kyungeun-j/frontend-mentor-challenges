@@ -21,3 +21,7 @@ function openFaqDrop(fd) {
         fd[1].style.transform = 'rotate(0deg)'
     }
 }
+
+console.log(faqDrop[2])
+faqDrop[2].children[0].style.fontWeight = '700'
+faqDrop[2].children[1].style.transform = 'rotate(180deg)'
