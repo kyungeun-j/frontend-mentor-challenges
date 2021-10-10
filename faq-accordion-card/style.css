@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  /* Background Gradient */
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+
+  /* Primary Text */
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  
+  /* Neutral Text */
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+
+  /* Dividers */
+  --light-grayish-blue: hsl(240, 5%, 91%)
+}
 
 * {
   padding: 0;
@@ -10,8 +26,8 @@ body {
   height: 100vh;
   background: linear-gradient(
     to bottom,
-    hsl(273, 75%, 66%),
-    hsl(240, 73%, 65%)
+    var(--soft-violet),
+    var(--soft-blue)
   );
   display: flex;
   justify-content: center;
@@ -20,7 +36,7 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
-.main {
+.main-container {
   width: 57.5rem;
   margin: 0;
   border-radius: 1rem;
@@ -32,18 +48,19 @@ body {
   box-shadow: 2px 20px 15px 2px hsl(252deg 43% 46%);
 }
 
-.img {
+.side-img {
   position: absolute;
   content: url(./images/illustration-box-desktop.svg);
-  transform: translate(-92px, 192px);
+  transform: translate(-123px, 192px);
   filter: drop-shadow(2px 4px 6px hsl(252deg 43% 35%));
 }
 
-.content {
+.back-section {
   margin-left: 50%;
 }
 
-.content h1 {
+.back-section h1 {
+  color: var(--very-dark-desaturated-blue);
   font-size: 2rem;
   font-weight: 700;
   margin-top: 3rem;
@@ -61,7 +78,11 @@ body {
 }
 
 .drop-title:hover {
-  color: hsl(14, 88%, 65%);
+  color: var(--soft-red);
+}
+
+.faq-q {
+  color: var(--very-dark-grayish-blue);
 }
 
 .a-btn {
@@ -76,7 +97,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.2rem;
-  color: hsl(240, 6%, 50%);
+  color: var(--dark-grayish-blue);
 }
 
 .close {
@@ -88,15 +109,19 @@ body {
 }
 
 hr {
-  /* background-color: hsl(240, 5%, 91%); */
-  border-top: 1px solid hsl(240, 5%, 91%);
+  border-top: 1px solid var(--light-grayish-blue);
   border-bottom: 0px;
   border-left: 0px;
 }
 
 @media screen and (max-width: 800px) {
-  .main {
-    width: 21rem;
+  body {
+    height: auto;
+  }
+  
+  .main-container {
+    margin: 11rem 0 6rem 0;
+    width: 20rem;
     border-radius: 1.5rem;
     background-image: url(./images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
@@ -106,25 +131,25 @@ hr {
     align-items: center;
   }
 
-  .img {
+  .side-img {
     position: absolute;
     content: url(./images/illustration-woman-online-mobile.svg);
     transform: translate(-15px, -109px);
     filter: none;
   }
 
-  .content {
+  .back-section {
     margin-left: auto;
     display: flex;
     flex-direction: column;
   }
 
-  .content h1 {
+  .back-section h1 {
     margin-top: 8rem;
   }
 
   .drop-down {
-    width: 18.5rem;
+    width: 17.5rem;
     margin: 1rem 0 3rem 0;
   }
 

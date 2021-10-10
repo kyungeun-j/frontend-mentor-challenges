@@ -7,6 +7,13 @@
 ## 🖥 Preview
 ![](./images/screenshot.png)
 
+<details markdown="1">
+<summary>Mobile Preview</summary>
+
+![](./images/screenshot2.png)
+
+</details>
+
 <br>
 
 ## 📎 Links

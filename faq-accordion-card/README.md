@@ -1,32 +1,20 @@
-# Frontend Mentor - FAQ accordion card solution
+# Frontend Mentor
+#### FAQ accordion card solution
+---
+<br>
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+## 🖥 Preview
+![](./images/screenshot.png)
 
-## Table of contents
-
-- Overview
-  - [Screenshot](#screenshot)
-- My process
-  - [Built with](#built-with)
-
-## Overview
-
-### Screenshot
-
-- Mobile
+<details markdown="1">
+<summary>Mobile Preview</summary>
 
 ![](./images/screenshot2.png)
 
-- Desktop
+</details>
 
-![](./images/screenshot.png)
+<br>
 
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Vanilla JS
+## 📎 Links
+- [Git Repository URL](https://github.com/kyungeun-j/frontend-mentor-challenges/tree/master/faq-accordion-card)
+- [Live Site URL](https://kyungeun-j.github.io/frontend-mentor-challenges/faq-accordion-card/)
