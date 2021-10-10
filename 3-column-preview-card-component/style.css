@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 
+:root {
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+
+/* paragraphs */
+--transparent-white: hsla(0, 0%, 100%, 0.75);
+/* (background, headings, buttons) */
+--very-light-gray: hsl(0, 0%, 95%);
+}
+
 html,
 body {
   height: 100vh;
@@ -14,9 +25,12 @@ body {
   background-color: hsl(0, 0%, 95%);
 }
 
-article {
-  width: 910px;
-  height: 500px;
+.main-container {
+  /* width: 910px;
+  height: 500px; */
+  margin: 0rem 20rem;
+  min-width: 910px;
+  max-height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,18 +44,17 @@ article {
   width: 100%;
   height: 100%;
   padding: 3.2rem;
-  color: hsla(0, 0%, 95%, 0.75);
+  color: var(--transparent-white);
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.55rem;
 }
 
-.card p {
+.card h1 {
   color: hsl(0deg 0% 95%);
   font-size: 2.5rem;
   font-family: "Big Shoulders Display", cursive;
-  font-weight: 700;
   margin: 2.5rem auto;
 }
 
@@ -49,70 +62,73 @@ article {
   display: block;
   border: 0;
   border-radius: 3rem;
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--very-light-gray);
   font-family: "Lexend Deca", sans-serif;
   font-size: 1rem;
-  padding: 0.85rem 2rem;
-  margin: 5.5rem 0;
+  padding: 0.85rem 1.65rem;
+  /* margin: 5.5rem 0; */
+  margin-top: 5rem;
 }
 
 .sedans {
-  background-color: hsl(31, 77%, 52%);
+  background-color: var(--bright-orange);
 }
 .sedans button {
-  color: hsl(31, 77%, 52%);
+  color: var(--bright-orange);
 }
 .sedans button:hover {
   opacity: 100%;
-  background-color: hsl(31, 77%, 52%);
-  color: hsl(0, 0%, 95%);
+  background-color: var(--bright-orange);
+  color: var(--very-light-gray);
+  padding: 0.7rem 1.5rem;
   border: 2.5px solid hsl(0, 0%, 95%);
 }
 
 .suvs {
-  background-color: hsl(184, 100%, 22%);
+  background-color: var(--dark-cyan);
 }
 .suvs button {
-  color: hsl(184, 100%, 22%);
+  color: var(--dark-cyan);
 }
 .suvs button:hover {
-  background-color: hsl(184, 100%, 22%);
-  color: hsl(0, 0%, 95%);
-  border: 2.5px solid hsl(0, 0%, 95%);
+  background-color: var(--dark-cyan);
+  color: var(--very-light-gray);
+  padding: 0.7rem 1.5rem;
+  border: 2.5px solid var(--very-light-gray)
 }
 
 .luxury {
-  background-color: hsl(179, 100%, 13%);
+  background-color: var(--very-dark-cyan);
 }
 .luxury button {
-  color: hsl(179, 100%, 13%);
+  color: var(--very-dark-cyan);
 }
 .luxury button:hover {
-  background-color: hsl(179, 100%, 13%);
-  color: hsl(0, 0%, 95%);
-  border: 2.5px solid hsl(0, 0%, 95%);
+  background-color: var(--very-dark-cyan);
+  color: var(--very-light-gray);
+  padding: 0.7rem 1.5rem;
+  border: 2.5px solid var(--very-light-gray);
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 800px) {
   body {
     height: auto;
   }
 
-  article {
-    width: 335px;
-    height: 100%;
+  .main-container {
+    min-width: 340px;
+    max-height: 100%;
     flex-direction: column;
-    margin: 10% 0;
+    margin: 6rem;
   }
 
   .card {
     padding: 3rem;
-    height: 455px;
     font-size: 1rem;
     line-height: 1.6rem;
   }
 
   .card button {
-    margin: 2.5rem 0;
+    margin-top: 2rem;
   }
 }
