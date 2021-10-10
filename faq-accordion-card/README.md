@@ -9,7 +9,7 @@
 <details markdown="1">
 <summary>Mobile Preview</summary>
 
-<img style="height: 400px" src="./images/screenshot2.png">
+<img style="height: 600px" src="./images/screenshot2.png">
 
 </details>
 
